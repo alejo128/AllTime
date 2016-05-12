@@ -1,6 +1,6 @@
 class PlacesController <
   def index
-    a = Local.all
+    a = Place.all
     render json: a
   end
 end

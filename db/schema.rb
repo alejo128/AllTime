@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160510031308) do
 
-  create_table "locals", force: :cascade do |t|
+  create_table "places", force: :cascade do |t|
     t.string   "nombre"
     t.integer  "telefono"
     t.string   "direccion"
