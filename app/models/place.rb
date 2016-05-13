@@ -1,3 +1,3 @@
-class Local < ActiveRecord::Base
+class Place < ActiveRecord::Base
   has_many :schedule
 end
