@@ -10,4 +10,4 @@ class PlacesController < ApplicationController
   json = @a.to_json
 end
 
-@places2 = place.places2.to_json
+#@places2 = place.places2.to_json
