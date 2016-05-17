@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20160510031308) do
 
   create_table "places", force: :cascade do |t|
+    t.integer  "places_id"
     t.string   "nombre"
     t.integer  "telefono"
     t.string   "direccion"
@@ -23,11 +24,12 @@ ActiveRecord::Schema.define(version: 20160510031308) do
   end
 
   create_table "schedules", force: :cascade do |t|
+    t.integer  "schedule_id"
     t.string   "endweek"
     t.string   "midweek"
     t.string   "festivos"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

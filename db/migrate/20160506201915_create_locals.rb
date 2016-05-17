@@ -1,6 +1,7 @@
-class CreateLocals < ActiveRecord::Migration
+class CreatePlaces < ActiveRecord::Migration
   def change
-    create_table :locals do |t|
+    create_table :places do |t|
+      t.integer :places_id
       t.string :nombre
       t.integer :telefono
       t.string :direccion

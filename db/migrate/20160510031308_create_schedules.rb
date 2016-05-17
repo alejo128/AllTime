@@ -1,7 +1,8 @@
 class CreateSchedules < ActiveRecord::Migration
   def change
     create_table :schedules do |t|
-      t.string :endweek 
+      t.integer :schedule_id
+      t.string :endweek
       t.string :midweek
       t.string :festivos
 

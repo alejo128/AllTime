@@ -1,1 +1,14 @@
-<%= @places.inspect %>
+<h1> HOLA </h1>
+
+<% Place.all.each do |places| %>
+  <%= places.id %>
+  <ul></ul>
+  <%= places.nombre %>
+  <ul></ul>
+  <%= places.telefono %>
+  <ul></ul>
+  <%= places.direccion %>
+  <ul></ul>
+  <%= places.schedule_id %>
+  <ul></ul>
+<% end %>
