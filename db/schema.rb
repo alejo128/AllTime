@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 20160510031308) do
 
   create_table "places", force: :cascade do |t|
     t.integer  "places_id"
-    t.string   "title"
-    t.integer  "rating"
-    t.string   "genre"
+    t.string   "nombre"
+    t.integer  "telefono"
+    t.string   "direccion"
     t.integer  "schedule_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
