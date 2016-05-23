@@ -26,7 +26,7 @@ schedules_list = [
 ]
 
 places_list.each do |places|
-  Place.create(places_id: places[0], nombre: places[1], telefono: places[2], direccion: places[2], schedule_id: places[3])
+  Place.create(places_id: places[0], title: places[1], rating: places[2], genre: places[2], schedule_id: places[3])
 end
 
 schedules_list.each do |schedules|
