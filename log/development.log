@@ -4626,3 +4626,161 @@ Started GET "/places.json" for 127.0.0.1 at 2016-05-23 16:30:10 -0500
 Processing by PlacesController#index as JSON
   [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places"[0m
 Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (118.8ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "places_id" integer, "nombre" varchar, "telefono" integer, "direccion" varchar, "schedule_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (99.9ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "schedule_id" integer, "endweek" varchar, "midweek" varchar, "festivos" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (95.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (100.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (77.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (77.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36m (102.6ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "places_id" integer, "nombre" varchar, "telefono" integer, "direccion" varchar, "schedule_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (88.9ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "schedule_id" integer, "endweek" varchar, "midweek" varchar, "festivos" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (88.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (88.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (57.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (77.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 0], ["nombre", "veterinariaA"], ["telefono", 1234], ["direccion", "1234"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:46.043629"], ["updated_at", "2016-05-23 21:41:46.043629"]]
+  [1m[35m (73.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 1], ["nombre", "veterinariaB"], ["telefono", 5678], ["direccion", "5678"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:46.120976"], ["updated_at", "2016-05-23 21:41:46.120976"]]
+  [1m[36m (74.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 2], ["nombre", "veterinariaC"], ["telefono", 7890], ["direccion", "7890"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:46.199353"], ["updated_at", "2016-05-23 21:41:46.199353"]]
+  [1m[35m (74.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 3], ["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "3474"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:46.276594"], ["updated_at", "2016-05-23 21:41:46.276594"]]
+  [1m[36m (75.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 4], ["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "6745"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:46.354857"], ["updated_at", "2016-05-23 21:41:46.354857"]]
+  [1m[35m (74.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 5], ["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "5678"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:46.432073"], ["updated_at", "2016-05-23 21:41:46.432073"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 0], ["endweek", "9am A 8pm"], ["midweek", "6am A 8pm"], ["festivos", "9am A 4pm"], ["created_at", "2016-05-23 21:41:46.524006"], ["updated_at", "2016-05-23 21:41:46.524006"]]
+  [1m[35m (71.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 1], ["endweek", "9am A 8pm"], ["midweek", "6am a 9pm"], ["festivos", "9am a 4pm"], ["created_at", "2016-05-23 21:41:46.598731"], ["updated_at", "2016-05-23 21:41:46.598731"]]
+  [1m[36m (64.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 2], ["endweek", "10am A 6pm"], ["midweek", "9am A 9pm"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-23 21:41:46.665862"], ["updated_at", "2016-05-23 21:41:46.665862"]]
+  [1m[35m (63.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 3], ["endweek", "24h"], ["midweek", "6am A 9pm"], ["festivos", "6am A 9pm"], ["created_at", "2016-05-23 21:41:46.732606"], ["updated_at", "2016-05-23 21:41:46.732606"]]
+  [1m[36m (73.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 4], ["endweek", "24h"], ["midweek", "24h"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-23 21:41:46.810390"], ["updated_at", "2016-05-23 21:41:46.810390"]]
+  [1m[35m (74.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 5], ["endweek", "24h"], ["midweek", "24h"], ["festivos", "24h"], ["created_at", "2016-05-23 21:41:46.888197"], ["updated_at", "2016-05-23 21:41:46.888197"]]
+  [1m[36m (74.4ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 0], ["nombre", "veterinariaA"], ["telefono", 1234], ["direccion", "1234"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:53.776867"], ["updated_at", "2016-05-23 21:41:53.776867"]]
+  [1m[35m (97.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 1], ["nombre", "veterinariaB"], ["telefono", 5678], ["direccion", "5678"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:53.878951"], ["updated_at", "2016-05-23 21:41:53.878951"]]
+  [1m[36m (72.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 2], ["nombre", "veterinariaC"], ["telefono", 7890], ["direccion", "7890"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:53.955054"], ["updated_at", "2016-05-23 21:41:53.955054"]]
+  [1m[35m (75.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 3], ["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "3474"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:54.033192"], ["updated_at", "2016-05-23 21:41:54.033192"]]
+  [1m[36m (74.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 4], ["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "6745"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:54.110576"], ["updated_at", "2016-05-23 21:41:54.110576"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 5], ["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "5678"], ["schedule_id", 0], ["created_at", "2016-05-23 21:41:54.188544"], ["updated_at", "2016-05-23 21:41:54.188544"]]
+  [1m[36m (63.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 0], ["endweek", "9am A 8pm"], ["midweek", "6am A 8pm"], ["festivos", "9am A 4pm"], ["created_at", "2016-05-23 21:41:54.267875"], ["updated_at", "2016-05-23 21:41:54.267875"]]
+  [1m[35m (73.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 1], ["endweek", "9am A 8pm"], ["midweek", "6am a 9pm"], ["festivos", "9am a 4pm"], ["created_at", "2016-05-23 21:41:54.343945"], ["updated_at", "2016-05-23 21:41:54.343945"]]
+  [1m[36m (75.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 2], ["endweek", "10am A 6pm"], ["midweek", "9am A 9pm"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-23 21:41:54.422036"], ["updated_at", "2016-05-23 21:41:54.422036"]]
+  [1m[35m (74.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 3], ["endweek", "24h"], ["midweek", "6am A 9pm"], ["festivos", "6am A 9pm"], ["created_at", "2016-05-23 21:41:54.499881"], ["updated_at", "2016-05-23 21:41:54.499881"]]
+  [1m[36m (74.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 4], ["endweek", "24h"], ["midweek", "24h"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-23 21:41:54.577426"], ["updated_at", "2016-05-23 21:41:54.577426"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 5], ["endweek", "24h"], ["midweek", "24h"], ["festivos", "24h"], ["created_at", "2016-05-23 21:41:54.654868"], ["updated_at", "2016-05-23 21:41:54.654868"]]
+  [1m[36m (101.3ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 16:42:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 191ms (Views: 184.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/locales.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/style.self-8adec97b71af1eb4a8745f196aea554cdc77e0888f2f076c0c1c4d7876051d41.css?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/locales.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/schedules.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-23 16:42:12 -0500
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-23 16:42:15 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 61ms (Views: 51.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-05-23 16:42:20 -0500
+Processing by PlacesController#index as JSON
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-05-23 16:42:31 -0500
+Processing by PlacesController#index as JSON
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places"
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-05-23 16:42:32 -0500
+Processing by PlacesController#index as JSON
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
