@@ -4388,3 +4388,66 @@ Completed 200 OK in 63ms (Views: 54.0ms | ActiveRecord: 1.3ms)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 5], ["endweek", "24h"], ["midweek", "24h"], ["festivos", "24h"], ["created_at", "2016-05-22 20:10:38.830367"], ["updated_at", "2016-05-22 20:10:38.830367"]]
   [1m[36m (74.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-23 13:56:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 188ms (Views: 181.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-23 13:56:36 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 61ms (Views: 51.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-05-23 13:57:05 -0500
+Processing by PlacesController#index as JSON
+  Rendered places/index.json.jbuilder (3.4ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-23 13:59:03 -0500
+
+SyntaxError (/home/jmb/Documentos/PIntegrador/alltime/app/controllers/places_controller.rb:7: syntax error, unexpected ':', expecting keyword_end
+      html: {
+           ^
+/home/jmb/Documentos/PIntegrador/alltime/app/controllers/places_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/places_controller.rb:7: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/places_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.8ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.0ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.7ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-23 14:00:30 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-05-23 14:00:39 -0500
+Processing by PlacesController#index as JSON
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places"
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/places.xml" for 127.0.0.1 at 2016-05-23 14:02:00 -0500
+Processing by PlacesController#index as XML
+  [1m[36mPlace Load (0.7ms)[0m  [1mSELECT "places".* FROM "places"[0m
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 1.1ms)
