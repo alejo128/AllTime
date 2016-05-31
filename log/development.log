@@ -4784,3 +4784,385 @@ Started GET "/places.json" for 127.0.0.1 at 2016-05-23 16:42:32 -0500
 Processing by PlacesController#index as JSON
   [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
 Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (133.7ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "places_id" integer, "nombre" varchar, "telefono" integer, "direccion" varchar, "schedule_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (126.7ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "schedule_id" integer, "endweek" varchar, "midweek" varchar, "festivos" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (129.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (100.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (74.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (77.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36m (83.0ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "places_id" integer, "nombre" varchar, "telefono" integer, "direccion" varchar, "schedule_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (100.2ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "schedule_id" integer, "endweek" varchar, "midweek" varchar, "festivos" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (100.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (100.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (77.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (77.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 0], ["nombre", "veterinariaA"], ["telefono", 1234], ["direccion", "1234"], ["schedule_id", 0], ["created_at", "2016-05-27 20:58:23.753206"], ["updated_at", "2016-05-27 20:58:23.753206"]]
+  [1m[35m (88.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 1], ["nombre", "veterinariaB"], ["telefono", 5678], ["direccion", "5678"], ["schedule_id", 0], ["created_at", "2016-05-27 20:58:23.865342"], ["updated_at", "2016-05-27 20:58:23.865342"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 2], ["nombre", "veterinariaC"], ["telefono", 7890], ["direccion", "7890"], ["schedule_id", 0], ["created_at", "2016-05-27 20:58:23.943585"], ["updated_at", "2016-05-27 20:58:23.943585"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 3], ["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "3474"], ["schedule_id", 0], ["created_at", "2016-05-27 20:58:24.021119"], ["updated_at", "2016-05-27 20:58:24.021119"]]
+  [1m[36m (75.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["places_id", 4], ["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "6745"], ["schedule_id", 0], ["created_at", "2016-05-27 20:58:24.098752"], ["updated_at", "2016-05-27 20:58:24.098752"]]
+  [1m[35m (64.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("places_id", "nombre", "telefono", "direccion", "schedule_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["places_id", 5], ["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "5678"], ["schedule_id", 0], ["created_at", "2016-05-27 20:58:24.165722"], ["updated_at", "2016-05-27 20:58:24.165722"]]
+  [1m[36m (63.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 0], ["endweek", "9am A 8pm"], ["midweek", "6am A 8pm"], ["festivos", "9am A 4pm"], ["created_at", "2016-05-27 20:58:24.258748"], ["updated_at", "2016-05-27 20:58:24.258748"]]
+  [1m[35m (70.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 1], ["endweek", "9am A 8pm"], ["midweek", "6am a 9pm"], ["festivos", "9am a 4pm"], ["created_at", "2016-05-27 20:58:24.332377"], ["updated_at", "2016-05-27 20:58:24.332377"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 2], ["endweek", "10am A 6pm"], ["midweek", "9am A 9pm"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-27 20:58:24.409778"], ["updated_at", "2016-05-27 20:58:24.409778"]]
+  [1m[35m (75.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 3], ["endweek", "24h"], ["midweek", "6am A 9pm"], ["festivos", "6am A 9pm"], ["created_at", "2016-05-27 20:58:24.487481"], ["updated_at", "2016-05-27 20:58:24.487481"]]
+  [1m[36m (75.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["schedule_id", 4], ["endweek", "24h"], ["midweek", "24h"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-27 20:58:24.565219"], ["updated_at", "2016-05-27 20:58:24.565219"]]
+  [1m[35m (75.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("schedule_id", "endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["schedule_id", 5], ["endweek", "24h"], ["midweek", "24h"], ["festivos", "24h"], ["created_at", "2016-05-27 20:58:24.643472"], ["updated_at", "2016-05-27 20:58:24.643472"]]
+  [1m[36m (74.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (93.0ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "telefono" integer, "direccion" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (88.9ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "endweek" varchar, "midweek" varchar, "festivos" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (104.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (89.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (76.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (77.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36m (90.2ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "telefono" integer, "direccion" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (78.1ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "endweek" varchar, "midweek" varchar, "festivos" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (89.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (89.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (50.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (66.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "veterinariaA"], ["telefono", 1234], ["direccion", "abc12"], ["created_at", "2016-05-27 21:02:01.804292"], ["updated_at", "2016-05-27 21:02:01.804292"]]
+  [1m[35m (67.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "veterinariaB"], ["telefono", 5678], ["direccion", "cde34"], ["created_at", "2016-05-27 21:02:01.876710"], ["updated_at", "2016-05-27 21:02:01.876710"]]
+  [1m[36m (75.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "veterinariaC"], ["telefono", 7890], ["direccion", "gfc56"], ["created_at", "2016-05-27 21:02:01.954259"], ["updated_at", "2016-05-27 21:02:01.954259"]]
+  [1m[35m (75.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"], ["created_at", "2016-05-27 21:02:02.032316"], ["updated_at", "2016-05-27 21:02:02.032316"]]
+  [1m[36m (75.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"], ["created_at", "2016-05-27 21:02:02.109961"], ["updated_at", "2016-05-27 21:02:02.109961"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"], ["created_at", "2016-05-27 21:02:02.187644"], ["updated_at", "2016-05-27 21:02:02.187644"]]
+  [1m[36m (75.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "9am A 8pm"], ["midweek", "6am A 8pm"], ["festivos", "9am A 4pm"], ["created_at", "2016-05-27 21:02:02.278792"], ["updated_at", "2016-05-27 21:02:02.278792"]]
+  [1m[35m (72.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "9am A 8pm"], ["midweek", "6am a 9pm"], ["festivos", "9am a 4pm"], ["created_at", "2016-05-27 21:02:02.354466"], ["updated_at", "2016-05-27 21:02:02.354466"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "10am A 6pm"], ["midweek", "9am A 9pm"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-27 21:02:02.432562"], ["updated_at", "2016-05-27 21:02:02.432562"]]
+  [1m[35m (74.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "24h"], ["midweek", "6am A 9pm"], ["festivos", "6am A 9pm"], ["created_at", "2016-05-27 21:02:02.509954"], ["updated_at", "2016-05-27 21:02:02.509954"]]
+  [1m[36m (64.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "24h"], ["midweek", "24h"], ["festivos", "10am A 5pm"], ["created_at", "2016-05-27 21:02:02.576986"], ["updated_at", "2016-05-27 21:02:02.576986"]]
+  [1m[35m (63.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "24h"], ["midweek", "24h"], ["festivos", "24h"], ["created_at", "2016-05-27 21:02:02.643425"], ["updated_at", "2016-05-27 21:02:02.643425"]]
+  [1m[36m (52.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-27 16:03:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 556ms (Views: 529.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-27 16:03:47 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (44.1ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `schedule_id' for #<Place:0x007f5ebe0ecda0>
+Did you mean?  schedule_ids
+               schedule_ids=
+               schedule
+               schedule=):
+     9:   <ul></ul>
+    10:   <%= places.direccion %>
+    11:   <ul></ul>
+    12:   <%= places.schedule_id %>
+    13:   <ul></ul>
+    14: <% end %>
+  app/views/places/index.html.erb:12:in `block in _app_views_places_index_html_erb___1914773796387931734_70022445934840'
+  app/views/places/index.html.erb:3:in `_app_views_places_index_html_erb___1914773796387931734_70022445934840'
+  app/controllers/places_controller.rb:6:in `index'
+
+
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.7ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.2ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-27 16:03:47 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `schedule_id' for #<Place:0x007f5ebdbbca88>
+Did you mean?  schedule_ids
+               schedule_ids=
+               schedule
+               schedule=):
+     9:   <ul></ul>
+    10:   <%= places.direccion %>
+    11:   <ul></ul>
+    12:   <%= places.schedule_id %>
+    13:   <ul></ul>
+    14: <% end %>
+  app/views/places/index.html.erb:12:in `block in _app_views_places_index_html_erb___1914773796387931734_70022445934840'
+  app/views/places/index.html.erb:3:in `_app_views_places_index_html_erb___1914773796387931734_70022445934840'
+  app/controllers/places_controller.rb:6:in `index'
+
+
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.5ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.4ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-05-27 16:03:55 -0500
+Processing by PlacesController#index as JSON
+  [1m[35mPlace Load (0.2ms)[0m  SELECT "places".* FROM "places"
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-27 16:07:17 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `schedule_id' for #<Place:0x007f5ebe0047d0>
+Did you mean?  schedule_ids
+               schedule_ids=
+               schedule
+               schedule=):
+     9:   <ul></ul>
+    10:   <%= places.direccion %>
+    11:   <ul></ul>
+    12:   <!-- <%= places.schedule_id %> -->
+    13:   <ul></ul>
+    14: <% end %>
+  app/views/places/index.html.erb:12:in `block in _app_views_places_index_html_erb___1914773796387931734_70022445747080'
+  app/views/places/index.html.erb:3:in `_app_views_places_index_html_erb___1914773796387931734_70022445747080'
+  app/controllers/places_controller.rb:6:in `index'
+
+
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.2ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-27 16:08:04 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.3ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `schedule_id' for #<Place:0x007f5ebea8c950>
+Did you mean?  schedule_ids
+               schedule_ids=
+               schedule
+               schedule=):
+     9:   <ul></ul>
+    10:   <%= places.direccion %>
+    11:   <ul></ul>
+    12:   <!--<%= places.schedule_id %>-->
+    13:   <ul></ul>
+    14: <% end %>
+  app/views/places/index.html.erb:12:in `block in _app_views_places_index_html_erb___1914773796387931734_70022451128160'
+  app/views/places/index.html.erb:3:in `_app_views_places_index_html_erb___1914773796387931734_70022451128160'
+  app/controllers/places_controller.rb:6:in `index'
+
+
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.7ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.8ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT "places".* FROM "places"[0m
+  Rendered places/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/locales.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/style.self-8adec97b71af1eb4a8745f196aea554cdc77e0888f2f076c0c1c4d7876051d41.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/locales.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/schedules.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:13 -0500
+
+
+Started GET "/schedules" for 127.0.0.1 at 2016-05-27 16:08:33 -0500
+Processing by SchedulesController#index as HTML
+  [1m[35mSchedule Load (0.2ms)[0m  SELECT "schedules".* FROM "schedules"
+  Rendered schedules/index.html.erb within layouts/application (19.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `schedule_id' for #<Schedule:0x007f5ebdd891b8>):
+    1: <h1> Horarios </h1>
+    2: 
+    3: <% Schedule.all.each do |schedules| %>
+    4: <!--  <%= schedules.schedule_id %> -->
+    5:   <ul></ul>
+    6:   <%= schedules.endweek %>
+    7:   <ul></ul>
+  app/views/schedules/index.html.erb:4:in `block in _app_views_schedules_index_html_erb___3376856240091080772_70022448707500'
+  app/views/schedules/index.html.erb:3:in `_app_views_schedules_index_html_erb___3376856240091080772_70022448707500'
+  app/controllers/schedules_controller.rb:5:in `index'
+
+
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jmb/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.7ms)
+
+
+Started GET "/schedules" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+Processing by SchedulesController#index as HTML
+  [1m[36mSchedule Load (0.3ms)[0m  [1mSELECT "schedules".* FROM "schedules"[0m
+  Rendered schedules/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/locales.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+
+
+Started GET "/assets/style.self-8adec97b71af1eb4a8745f196aea554cdc77e0888f2f076c0c1c4d7876051d41.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:46 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:47 -0500
+
+
+Started GET "/assets/locales.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:47 -0500
+
+
+Started GET "/assets/schedules.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:47 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:47 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-05-27 16:08:47 -0500
