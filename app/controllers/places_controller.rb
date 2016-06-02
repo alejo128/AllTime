@@ -1,4 +1,5 @@
 class PlacesController < ApplicationController
+  require 'json'
   #GET /places
   def index
     @a = Place.all
@@ -19,6 +20,7 @@ class PlacesController < ApplicationController
   def show
      @places = Places.find params[:all]
   end
+
   json = @a.to_json
 end
 

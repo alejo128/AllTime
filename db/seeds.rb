@@ -9,6 +9,9 @@
 places_list = [
   #Farmacias#
 
+  [ "Drogas La Rebaja Sede Poblado", "+57 460 41313", "Av Poblado num 42 85" ],
+  [ "Drogas La Rebaja Sede Aguacatala", "+57 460 41313", "Cl 15 Sur num 46 120 Local 107" ],
+  [ "Drogas La Rebaja Sede Parque El Poblado", "+57 431 12552", "Cl 10 num 43 40" ],
   [ "Farmacia Mental Care", "+57 444 49446", "Av El Poblado num 6 26 Local 206" ],
   [ "Farmacia Colsubsidio Almacentro Medellin", "+57 426 25633 ", "Av El Poblado num 7 sur 170" ],
   [ "Farmacia Las Americas", "+57 434 20899", "San Fernando Plaza Entrada num 1 51" ],
@@ -26,33 +29,27 @@ places_list = [
   [ "DROGAS LA BASTILLA", "+57 451 33193", "Cl 51 num 48 03" ],
   [ "Drogueria RAS", "+57 441 26627", "Between Cra 73 & Cra 74, San Juan num 73" ],
   [ "Drogas La Rebaja Sede San Javier", "+57 425 31043", "Cl 44 num 98 46" ],
-  [ "Drogas La Rebaja PLUS Sede Suramericana", "+57 423 03333", "Cra 66 num 49 32" ],
-  [ "Drogueria Servidescuentos", "NO INFO", "Av 33 num 78" ],
-  [ "Drogueria Vida Vital", "+57 423 50277", "Cra 70 num 30A 44" ],
 
 
   #Veterinarias#
 
-  [ "farmaciaA", "3474", "fkg78" ],
-  [ "farmaciaB", "6745", "sdh98" ],
-  [ "farmaciaC", "5678", "dhg10" ],
-  [ "farmaciaA", "3474", "fkg78" ],
-  [ "farmaciaB", "6745", "sdh98" ],
-  [ "farmaciaC", "5678", "dhg10" ],
-  [ "farmaciaA", "3474", "fkg78" ],
-  [ "farmaciaB", "6745", "sdh98" ],
-  [ "farmaciaC", "5678", "dhg10" ],
-  [ "farmaciaA", "3474", "fkg78" ],
-  [ "farmaciaB", "6745", "sdh98" ],
-  [ "farmaciaC", "5678", "dhg10" ],
-  [ "farmaciaA", "3474", "fkg78" ],
-  [ "farmaciaB", "6745", "sdh98" ],
-
+  [ "Clinica Veterinaria El Poblado", "+57 444 46287", "Cl 10A num 4052" ],
+  [ "Clinica Veterinaria LA 80", "+57 4 4441575", "Trasnversal 32b num 74B 5" ],
+  [ "Veterinaria ROBLEDO", "+57 442 21063", "Cl 65 num 8736" ],
+  [ "TERRANOVA", "+57 425 49187", "Cl 56 num 39 04" ],
+  [ "Centro Veterinario La 65", "+57 426 72007", "Cl. 103 num 64D 53" ],
+  [ "Consultorio Veterinario Avenida Bolivariana", "+57 423 52727", "Av Bolivariana num 42 12," ],
+  [ "Kanú Sede Santafe", "(574) 444 52 68", "Cra 43A num 7 Sur - 170 Local  2290." ],
+  [ "Kanu Sede Tesoro", "6745", "sdh98" ],
+  [ "Kanu Sede Envigado", "5678", "dhg10" ],
 ]
 
 
 schedules_list = [
   #Farmacias#
+  [ "Sab 7:30am a 9pm / Dom 8am a 8pm", "Lun a Vi 7:30am a 9pm", "Festivos Cerrado" ],
+  [ "Sab 7:30am a 9:30am / Dom 9am a 8pm ", "Lun a Vi 7:30am a 9:30pm", "Festivos Cerrado" ],
+  [ "Sab h / Dom 9am a 9pm", "Lun a Vi 7:30am a 9:30pm", "Festivos 9am a 9pm" ],
   [ "Sab 9am a 6pm / Dom Cerrado", "Lun a Vi 9am a 6pm", "Festivos Cerrado" ],
   [ "Sab 10am a 9pm / Dom 11am a 8pm", "Lun a Vi 10am a 9pm", "Festivos 11am a 8pm" ],
   [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
@@ -69,16 +66,19 @@ schedules_list = [
   [ "Sab 7am a 9pm / Dom 8am a 8pm", "Lun a Vi 8am a 7:30pm", "Festivos 8am a 8pm" ],
   [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado" ],
   [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado" ],
-
+  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
+  [ "Sab 7am a 7pm / Dom Cerrado", "Lun a Vi 7am a 7pm", "Festivos Cerrado" ],
+  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
 
   #Veterinarias#
-  [ "Sab 8am a 2pm / Dom Cerrado", "Lun a Vi 7am a 6pm", "Festivos Cerrado" ],
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado" ],
-  [ "Sab 8am a 9pm / Dom Cerrado", "Lun a Vi 8am a 9pm", "Festivos Cerrado" ],
+  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
+  [ "Sab 8am a 5pm / Dom 8am a 5pm", "Lun a Vi 8am a 5pm", "Festivos 8am a 5pm" ],
+  [ "Sab 8am a 8pm / Dom 8pm a 8pm", "Lun a Vi 8am a 8pm", "Festivos 8am a 8pm" ],
   [ "Sab 8am a 12am / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado" ],
   [ "Sab 8am a 7:30pm / Dom Cerrado", "Lun a Vi 10am a 9pm", "Festivos Cerrado" ],
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado" ],
-  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
+  [ "Sab 10am a 9pm / Dom 11am a 8pm", "Lun a Vi 10am a 9pm", "Festivos 11am a 8pm" ],
+  [ "Sab 9am a 9pm / Dom 9am a 8pm", "Lun a Vi 9am a 8pm", "Festivos Cerrado" ],
+  [ "Vie y Sab 10am a 7:30pm / Dom 10am a 6pm", "Lun a juev 10am a 7pm", "Festivos Cerrado" ],
 ]
 
 places_list.each do |places|

@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20160510031308) do
     t.integer  "telefono"
     t.string   "direccion"
     #t.integer  "schedule_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    #t.datetime "created_at",  null: false
+    #t.datetime "updated_at",  null: false
   end
 
   create_table "schedules", force: :cascade do |t|
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20160510031308) do
     t.string   "endweek"
     t.string   "midweek"
     t.string   "festivos"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    #t.datetime "created_at",  null: false
+    #t.datetime "updated_at",  null: false
   end
 
 end

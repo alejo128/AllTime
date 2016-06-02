@@ -5440,3 +5440,943 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
   [1m[35m (0.2ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"], ["created_at", "2016-06-02 19:23:30.358254"], ["updated_at", "2016-06-02 19:23:30.358254"]]
   [1m[35m (85.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Farmacia Mental Care"], ["telefono", 57], ["direccion", "Av El Poblado num 6 26 Local 206"], ["created_at", "2016-06-02 19:24:49.670566"], ["updated_at", "2016-06-02 19:24:49.670566"]]
+  [1m[35m (333.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Farmacia Colsubsidio Almacentro Medellin"], ["telefono", 57], ["direccion", "Av El Poblado num 7 sur 170"], ["created_at", "2016-06-02 19:24:50.007566"], ["updated_at", "2016-06-02 19:24:50.007566"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Farmacia Las Americas"], ["telefono", 57], ["direccion", "San Fernando Plaza Entrada num 1 51"], ["created_at", "2016-06-02 19:24:50.085017"], ["updated_at", "2016-06-02 19:24:50.085017"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Farmacia Pasteur Torre Las Vegas"], ["telefono", 1], ["direccion", "Av El Poblado num 14S 1"], ["created_at", "2016-06-02 19:24:50.162697"], ["updated_at", "2016-06-02 19:24:50.162697"]]
+  [1m[36m (53.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Salud Market El Poblado"], ["telefono", 57], ["direccion", "El Poblado num 9 36"], ["created_at", "2016-06-02 19:24:50.218047"], ["updated_at", "2016-06-02 19:24:50.218047"]]
+  [1m[35m (75.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Farmacia Surtifarma"], ["telefono", 57], ["direccion", "Cl 65 num 65 02"], ["created_at", "2016-06-02 19:24:50.296399"], ["updated_at", "2016-06-02 19:24:50.296399"]]
+  [1m[36m (74.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Farmacia Pasteur"], ["telefono", 57], ["direccion", "Cl 54 num 46 65"], ["created_at", "2016-06-02 19:24:50.373929"], ["updated_at", "2016-06-02 19:24:50.373929"]]
+  [1m[35m (91.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Drogueria Todo Drogas"], ["telefono", 57], ["direccion", "50 Ayacucho num 47"], ["created_at", "2016-06-02 19:24:50.468230"], ["updated_at", "2016-06-02 19:24:50.468230"]]
+  [1m[36m (79.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Farmacia ARCO IRIS"], ["telefono", 57], ["direccion", "24 Cra 45 num 55"], ["created_at", "2016-06-02 19:24:50.550452"], ["updated_at", "2016-06-02 19:24:50.550452"]]
+  [1m[35m (86.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Droguería López De Mesa"], ["telefono", 57], ["direccion", "NO INFO"], ["created_at", "2016-06-02 19:24:50.639486"], ["updated_at", "2016-06-02 19:24:50.639486"]]
+  [1m[36m (319.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Agora Farmacia Homeopatica"], ["telefono", 57], ["direccion", "Cl 42b num 63C"], ["created_at", "2016-06-02 19:24:50.961583"], ["updated_at", "2016-06-02 19:24:50.961583"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Droguería Específica"], ["telefono", 57], ["direccion", "NO INFO"], ["created_at", "2016-06-02 19:24:51.039317"], ["updated_at", "2016-06-02 19:24:51.039317"]]
+  [1m[36m (87.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Linea Vital FARMACIA"], ["telefono", 57], ["direccion", "Cra 30 num 102 222"], ["created_at", "2016-06-02 19:24:51.128619"], ["updated_at", "2016-06-02 19:24:51.128619"]]
+  [1m[35m (85.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Farmacia BLANCA"], ["telefono", 57], ["direccion", "Cl 53 num "], ["created_at", "2016-06-02 19:24:51.217341"], ["updated_at", "2016-06-02 19:24:51.217341"]]
+  [1m[36m (86.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "DROGAS LA BASTILLA"], ["telefono", 57], ["direccion", "Cl 51 num 48 03"], ["created_at", "2016-06-02 19:24:51.306144"], ["updated_at", "2016-06-02 19:24:51.306144"]]
+  [1m[35m (86.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Drogueria RAS"], ["telefono", 57], ["direccion", "Between Cra 73 & Cra 74, San Juan num 73"], ["created_at", "2016-06-02 19:24:51.394848"], ["updated_at", "2016-06-02 19:24:51.394848"]]
+  [1m[36m (64.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Drogas La Rebaja Sede San Javier"], ["telefono", 57], ["direccion", "Cl 44 num 98 46"], ["created_at", "2016-06-02 19:24:51.461681"], ["updated_at", "2016-06-02 19:24:51.461681"]]
+  [1m[35m (92.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Drogas La Rebaja PLUS Sede Suramericana"], ["telefono", 57], ["direccion", "Cra 66 num 49 32"], ["created_at", "2016-06-02 19:24:51.556616"], ["updated_at", "2016-06-02 19:24:51.556616"]]
+  [1m[36m (80.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "Drogueria Servidescuentos"], ["telefono", 0], ["direccion", "Av 33 num 78"], ["created_at", "2016-06-02 19:24:51.639322"], ["updated_at", "2016-06-02 19:24:51.639322"]]
+  [1m[35m (86.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "Drogueria Vida Vital"], ["telefono", 57], ["direccion", "Cra 70 num 30A 44"], ["created_at", "2016-06-02 19:24:51.728437"], ["updated_at", "2016-06-02 19:24:51.728437"]]
+  [1m[36m (85.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"], ["created_at", "2016-06-02 19:24:51.817427"], ["updated_at", "2016-06-02 19:24:51.817427"]]
+  [1m[35m (63.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"], ["created_at", "2016-06-02 19:24:51.883862"], ["updated_at", "2016-06-02 19:24:51.883862"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"], ["created_at", "2016-06-02 19:24:51.961539"], ["updated_at", "2016-06-02 19:24:51.961539"]]
+  [1m[35m (86.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"], ["created_at", "2016-06-02 19:24:52.050845"], ["updated_at", "2016-06-02 19:24:52.050845"]]
+  [1m[36m (85.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"], ["created_at", "2016-06-02 19:24:52.139413"], ["updated_at", "2016-06-02 19:24:52.139413"]]
+  [1m[35m (86.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"], ["created_at", "2016-06-02 19:24:52.228711"], ["updated_at", "2016-06-02 19:24:52.228711"]]
+  [1m[36m (85.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"], ["created_at", "2016-06-02 19:24:52.317543"], ["updated_at", "2016-06-02 19:24:52.317543"]]
+  [1m[35m (85.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"], ["created_at", "2016-06-02 19:24:52.406432"], ["updated_at", "2016-06-02 19:24:52.406432"]]
+  [1m[36m (104.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"], ["created_at", "2016-06-02 19:24:52.513464"], ["updated_at", "2016-06-02 19:24:52.513464"]]
+  [1m[35m (79.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"], ["created_at", "2016-06-02 19:24:52.595270"], ["updated_at", "2016-06-02 19:24:52.595270"]]
+  [1m[36m (85.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"], ["created_at", "2016-06-02 19:24:52.684153"], ["updated_at", "2016-06-02 19:24:52.684153"]]
+  [1m[35m (63.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"], ["created_at", "2016-06-02 19:24:52.750635"], ["updated_at", "2016-06-02 19:24:52.750635"]]
+  [1m[36m (75.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"], ["created_at", "2016-06-02 19:24:52.828680"], ["updated_at", "2016-06-02 19:24:52.828680"]]
+  [1m[35m (74.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"], ["created_at", "2016-06-02 19:24:52.906460"], ["updated_at", "2016-06-02 19:24:52.906460"]]
+  [1m[36m (85.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 9am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 9am a 6pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.008849"], ["updated_at", "2016-06-02 19:24:53.008849"]]
+  [1m[35m (83.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 10am a 9pm / Dom 11am a 8pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 11am a 8pm"], ["created_at", "2016-06-02 19:24:53.095363"], ["updated_at", "2016-06-02 19:24:53.095363"]]
+  [1m[36m (102.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"], ["created_at", "2016-06-02 19:24:53.201161"], ["updated_at", "2016-06-02 19:24:53.201161"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab NO INFO / Dom NO INFO"], ["midweek", "Lun a Vi NO INFO"], ["festivos", "Festivos NO INFO"], ["created_at", "2016-06-02 19:24:53.278100"], ["updated_at", "2016-06-02 19:24:53.278100"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 10am a 9pm / Dom 10am a 9pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 10am a 9pm"], ["created_at", "2016-06-02 19:24:53.355844"], ["updated_at", "2016-06-02 19:24:53.355844"]]
+  [1m[35m (74.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.433649"], ["updated_at", "2016-06-02 19:24:53.433649"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.511145"], ["updated_at", "2016-06-02 19:24:53.511145"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.589246"], ["updated_at", "2016-06-02 19:24:53.589246"]]
+  [1m[36m (63.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.655543"], ["updated_at", "2016-06-02 19:24:53.655543"]]
+  [1m[35m (75.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.733198"], ["updated_at", "2016-06-02 19:24:53.733198"]]
+  [1m[36m (95.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.830581"], ["updated_at", "2016-06-02 19:24:53.830581"]]
+  [1m[35m (55.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"], ["created_at", "2016-06-02 19:24:53.888786"], ["updated_at", "2016-06-02 19:24:53.888786"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 7am a 4pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 7:30pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:53.966525"], ["updated_at", "2016-06-02 19:24:53.966525"]]
+  [1m[35m (75.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 7am a 9pm / Dom 8am a 8pm"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos 8am a 8pm"], ["created_at", "2016-06-02 19:24:54.044313"], ["updated_at", "2016-06-02 19:24:54.044313"]]
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.122529"], ["updated_at", "2016-06-02 19:24:54.122529"]]
+  [1m[35m (74.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.200138"], ["updated_at", "2016-06-02 19:24:54.200138"]]
+  [1m[36m (74.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.277863"], ["updated_at", "2016-06-02 19:24:54.277863"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.355736"], ["updated_at", "2016-06-02 19:24:54.355736"]]
+  [1m[36m (81.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.440291"], ["updated_at", "2016-06-02 19:24:54.440291"]]
+  [1m[35m (79.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.522181"], ["updated_at", "2016-06-02 19:24:54.522181"]]
+  [1m[36m (75.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.600382"], ["updated_at", "2016-06-02 19:24:54.600382"]]
+  [1m[35m (74.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"], ["created_at", "2016-06-02 19:24:54.678179"], ["updated_at", "2016-06-02 19:24:54.678179"]]
+  [1m[36m (52.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"], ["created_at", "2016-06-02 19:24:54.733582"], ["updated_at", "2016-06-02 19:24:54.733582"]]
+  [1m[35m (75.0ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-02 14:25:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 536ms (Views: 517.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-06-02 14:25:36 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.7ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 55ms (Views: 45.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-06-02 14:26:34 -0500
+Processing by PlacesController#index as JSON
+  [1m[36mPlace Load (0.4ms)[0m  [1mSELECT "places".* FROM "places"[0m
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-02 14:28:13 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2016-06-02 14:28:14 -0500
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.8ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-06-02 14:28:17 -0500
+Processing by PlacesController#index as JSON
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places"[0m
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.6ms)
+  [1m[36m (347.6ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "telefono" integer, "direccion" varchar) [0m
+  [1m[35m (91.1ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "endweek" varchar, "midweek" varchar, "festivos" varchar) 
+  [1m[36m (90.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (100.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (73.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (66.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36m (83.3ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "telefono" integer, "direccion" varchar) [0m
+  [1m[35m (89.3ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "endweek" varchar, "midweek" varchar, "festivos" varchar) 
+  [1m[36m (100.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (111.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (87.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (88.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Mental Care"], ["telefono", 57], ["direccion", "Av El Poblado num 6 26 Local 206"]]
+  [1m[35m (79.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Colsubsidio Almacentro Medellin"], ["telefono", 57], ["direccion", "Av El Poblado num 7 sur 170"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Las Americas"], ["telefono", 57], ["direccion", "San Fernando Plaza Entrada num 1 51"]]
+  [1m[35m (64.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Pasteur Torre Las Vegas"], ["telefono", 1], ["direccion", "Av El Poblado num 14S 1"]]
+  [1m[36m (64.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Salud Market El Poblado"], ["telefono", 57], ["direccion", "El Poblado num 9 36"]]
+  [1m[35m (76.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Surtifarma"], ["telefono", 57], ["direccion", "Cl 65 num 65 02"]]
+  [1m[36m (75.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Pasteur"], ["telefono", 57], ["direccion", "Cl 54 num 46 65"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Todo Drogas"], ["telefono", 57], ["direccion", "50 Ayacucho num 47"]]
+  [1m[36m (75.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia ARCO IRIS"], ["telefono", 57], ["direccion", "24 Cra 45 num 55"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería López De Mesa"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (74.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Agora Farmacia Homeopatica"], ["telefono", 57], ["direccion", "Cl 42b num 63C"]]
+  [1m[35m (74.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería Específica"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (74.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Linea Vital FARMACIA"], ["telefono", 57], ["direccion", "Cra 30 num 102 222"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia BLANCA"], ["telefono", 57], ["direccion", "Cl 53 num "]]
+  [1m[36m (64.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "DROGAS LA BASTILLA"], ["telefono", 57], ["direccion", "Cl 51 num 48 03"]]
+  [1m[35m (75.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria RAS"], ["telefono", 57], ["direccion", "Between Cra 73 & Cra 74, San Juan num 73"]]
+  [1m[36m (75.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogas La Rebaja Sede San Javier"], ["telefono", 57], ["direccion", "Cl 44 num 98 46"]]
+  [1m[35m (75.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogas La Rebaja PLUS Sede Suramericana"], ["telefono", 57], ["direccion", "Cra 66 num 49 32"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogueria Servidescuentos"], ["telefono", 0], ["direccion", "Av 33 num 78"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Vida Vital"], ["telefono", 57], ["direccion", "Cra 70 num 30A 44"]]
+  [1m[36m (194.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[35m (389.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[35m (76.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[36m (64.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[35m (64.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[36m (75.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[35m (86.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (75.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[36m (75.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[35m (76.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 9am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 9am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (68.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 10am a 9pm / Dom 11am a 8pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 11am a 8pm"]]
+  [1m[36m (63.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[35m (76.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab NO INFO / Dom NO INFO"], ["midweek", "Lun a Vi NO INFO"], ["festivos", "Festivos NO INFO"]]
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 10am a 9pm / Dom 10am a 9pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 10am a 9pm"]]
+  [1m[35m (52.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (74.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (74.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (74.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[36m (74.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 7am a 4pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (65.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 7am a 9pm / Dom 8am a 8pm"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos 8am a 8pm"]]
+  [1m[36m (65.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (76.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (80.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (63.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (64.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (64.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (76.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[35m (76.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Mental Care"], ["telefono", 57], ["direccion", "Av El Poblado num 6 26 Local 206"]]
+  [1m[35m (341.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Colsubsidio Almacentro Medellin"], ["telefono", 57], ["direccion", "Av El Poblado num 7 sur 170"]]
+  [1m[36m (76.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Las Americas"], ["telefono", 57], ["direccion", "San Fernando Plaza Entrada num 1 51"]]
+  [1m[35m (76.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Pasteur Torre Las Vegas"], ["telefono", 1], ["direccion", "Av El Poblado num 14S 1"]]
+  [1m[36m (76.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Salud Market El Poblado"], ["telefono", 57], ["direccion", "El Poblado num 9 36"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Surtifarma"], ["telefono", 57], ["direccion", "Cl 65 num 65 02"]]
+  [1m[36m (65.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Pasteur"], ["telefono", 57], ["direccion", "Cl 54 num 46 65"]]
+  [1m[35m (65.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Todo Drogas"], ["telefono", 57], ["direccion", "50 Ayacucho num 47"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia ARCO IRIS"], ["telefono", 57], ["direccion", "24 Cra 45 num 55"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería López De Mesa"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (75.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Agora Farmacia Homeopatica"], ["telefono", 57], ["direccion", "Cl 42b num 63C"]]
+  [1m[35m (76.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería Específica"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (175.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Linea Vital FARMACIA"], ["telefono", 57], ["direccion", "Cra 30 num 102 222"]]
+  [1m[35m (78.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia BLANCA"], ["telefono", 57], ["direccion", "Cl 53 num "]]
+  [1m[36m (76.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "DROGAS LA BASTILLA"], ["telefono", 57], ["direccion", "Cl 51 num 48 03"]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria RAS"], ["telefono", 57], ["direccion", "Between Cra 73 & Cra 74, San Juan num 73"]]
+  [1m[36m (75.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogas La Rebaja Sede San Javier"], ["telefono", 57], ["direccion", "Cl 44 num 98 46"]]
+  [1m[35m (64.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogas La Rebaja PLUS Sede Suramericana"], ["telefono", 57], ["direccion", "Cra 66 num 49 32"]]
+  [1m[36m (74.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogueria Servidescuentos"], ["telefono", 0], ["direccion", "Av 33 num 78"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Vida Vital"], ["telefono", 57], ["direccion", "Cra 70 num 30A 44"]]
+  [1m[36m (85.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (85.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[35m (75.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[36m (75.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[35m (74.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[36m (75.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[35m (75.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (64.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[35m (64.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[36m (75.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaC"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[36m (53.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "farmaciaA"], ["telefono", 3474], ["direccion", "fkg78"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "farmaciaB"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (76.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 9am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 9am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (78.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 10am a 9pm / Dom 11am a 8pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 11am a 8pm"]]
+  [1m[36m (76.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[35m (75.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab NO INFO / Dom NO INFO"], ["midweek", "Lun a Vi NO INFO"], ["festivos", "Festivos NO INFO"]]
+  [1m[36m (76.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 10am a 9pm / Dom 10am a 9pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 10am a 9pm"]]
+  [1m[35m (42.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (90.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (83.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 7am a 4pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (76.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 7am a 9pm / Dom 8am a 8pm"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos 8am a 8pm"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (76.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (85.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (65.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (82.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (80.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+
+
+Started GET "/places" for 127.0.0.1 at 2016-06-02 14:30:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places"
+  Rendered places/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 190ms (Views: 180.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-06-02 14:30:55 -0500
+Processing by PlacesController#index as JSON
+  [1m[36mPlace Load (0.6ms)[0m  [1mSELECT "places".* FROM "places"[0m
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/places.json" for 127.0.0.1 at 2016-06-02 14:39:15 -0500
+Processing by PlacesController#index as JSON
+  [1m[35mPlace Load (0.7ms)[0m  SELECT "places".* FROM "places"
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/schedules" for 127.0.0.1 at 2016-06-02 14:39:32 -0500
+Processing by SchedulesController#index as HTML
+  [1m[36mSchedule Load (0.5ms)[0m  [1mSELECT "schedules".* FROM "schedules"[0m
+  Rendered schedules/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 60ms (Views: 52.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/schedules.json" for 127.0.0.1 at 2016-06-02 14:39:44 -0500
+Processing by SchedulesController#index as JSON
+  [1m[35mSchedule Load (0.7ms)[0m  SELECT "schedules".* FROM "schedules"
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+  [1m[36m (117.7ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "telefono" integer, "direccion" varchar) [0m
+  [1m[35m (88.8ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "endweek" varchar, "midweek" varchar, "festivos" varchar) 
+  [1m[36m (53.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (100.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (80.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (77.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36m (98.3ms)[0m  [1mCREATE TABLE "places" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "telefono" integer, "direccion" varchar) [0m
+  [1m[35m (100.5ms)[0m  CREATE TABLE "schedules" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "endweek" varchar, "midweek" varchar, "festivos" varchar) 
+  [1m[36m (100.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (100.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (74.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160510031308')[0m
+  [1m[35m (77.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160506201915')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Mental Care"], ["telefono", 57], ["direccion", "Av El Poblado num 6 26 Local 206"]]
+  [1m[35m (64.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Colsubsidio Almacentro Medellin"], ["telefono", 57], ["direccion", "Av El Poblado num 7 sur 170"]]
+  [1m[36m (76.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Las Americas"], ["telefono", 57], ["direccion", "San Fernando Plaza Entrada num 1 51"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Pasteur Torre Las Vegas"], ["telefono", 1], ["direccion", "Av El Poblado num 14S 1"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Salud Market El Poblado"], ["telefono", 57], ["direccion", "El Poblado num 9 36"]]
+  [1m[35m (75.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Surtifarma"], ["telefono", 57], ["direccion", "Cl 65 num 65 02"]]
+  [1m[36m (75.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Pasteur"], ["telefono", 57], ["direccion", "Cl 54 num 46 65"]]
+  [1m[35m (74.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Todo Drogas"], ["telefono", 57], ["direccion", "50 Ayacucho num 47"]]
+  [1m[36m (74.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia ARCO IRIS"], ["telefono", 57], ["direccion", "24 Cra 45 num 55"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería López De Mesa"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (52.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Agora Farmacia Homeopatica"], ["telefono", 57], ["direccion", "Cl 42b num 63C"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería Específica"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (74.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Linea Vital FARMACIA"], ["telefono", 57], ["direccion", "Cra 30 num 102 222"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia BLANCA"], ["telefono", 57], ["direccion", "Cl 53 num "]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "DROGAS LA BASTILLA"], ["telefono", 57], ["direccion", "Cl 51 num 48 03"]]
+  [1m[35m (74.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria RAS"], ["telefono", 57], ["direccion", "Between Cra 73 & Cra 74, San Juan num 73"]]
+  [1m[36m (74.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogas La Rebaja Sede San Javier"], ["telefono", 57], ["direccion", "Cl 44 num 98 46"]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogas La Rebaja PLUS Sede Suramericana"], ["telefono", 57], ["direccion", "Cra 66 num 49 32"]]
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogueria Servidescuentos"], ["telefono", 0], ["direccion", "Av 33 num 78"]]
+  [1m[35m (75.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Vida Vital"], ["telefono", 57], ["direccion", "Cra 70 num 30A 44"]]
+  [1m[36m (99.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Clinica Veterinaria El Poblado"], ["telefono", 57], ["direccion", "Cl 10A num 4052"]]
+  [1m[35m (60.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Clinica Veterinaria LA 80"], ["telefono", 57], ["direccion", "Trasnversal 32b num 74B 5"]]
+  [1m[36m (75.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Veterinaria ROBLEDO"], ["telefono", 57], ["direccion", "Cl 65 num 8736"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "TERRANOVA"], ["telefono", 57], ["direccion", "Cl 56 num 39 04"]]
+  [1m[36m (64.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Centro Veterinario La 65"], ["telefono", 57], ["direccion", "Cl. 103 num 64D 53"]]
+  [1m[35m (75.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Consultorio Veterinario Avenida Bolivariana"], ["telefono", 57], ["direccion", "Av Bolivariana num 42 12,"]]
+  [1m[36m (75.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Kanú Sede Santafe"], ["telefono", 0], ["direccion", "Cra 43A num 7 Sur - 170 Local  2290."]]
+  [1m[35m (64.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Kanu Sede Tesoro"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (75.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Kanu Sede Envigado"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[35m (74.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 9am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 9am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (73.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 10am a 9pm / Dom 11am a 8pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 11am a 8pm"]]
+  [1m[35m (75.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab NO INFO / Dom NO INFO"], ["midweek", "Lun a Vi NO INFO"], ["festivos", "Festivos NO INFO"]]
+  [1m[35m (74.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 10am a 9pm / Dom 10am a 9pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 10am a 9pm"]]
+  [1m[36m (73.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (74.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (74.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (63.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (63.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (74.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (63.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[35m (74.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 7am a 4pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (74.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 7am a 9pm / Dom 8am a 8pm"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos 8am a 8pm"]]
+  [1m[35m (74.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (103.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (70.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[36m (64.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 5pm / Dom 8am a 5pm"], ["midweek", "Lun a Vi 8am a 5pm"], ["festivos", "Festivos 8am a 5pm"]]
+  [1m[35m (75.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 8pm / Dom 8pm a 8pm"], ["midweek", "Lun a Vi 8am a 8pm"], ["festivos", "Festivos 8am a 8pm"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (74.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (74.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 10am a 9pm / Dom 11am a 8pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 11am a 8pm"]]
+  [1m[35m (97.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 9am a 9pm / Dom 9am a 8pm"], ["midweek", "Lun a Vi 9am a 8pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (63.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Vie y Sab 10am a 7:30pm / Dom 10am a 6pm"], ["midweek", "Lun a juev 10am a 7pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Mental Care"], ["telefono", 57], ["direccion", "Av El Poblado num 6 26 Local 206"]]
+  [1m[35m (68.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Colsubsidio Almacentro Medellin"], ["telefono", 57], ["direccion", "Av El Poblado num 7 sur 170"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Las Americas"], ["telefono", 57], ["direccion", "San Fernando Plaza Entrada num 1 51"]]
+  [1m[35m (65.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Pasteur Torre Las Vegas"], ["telefono", 1], ["direccion", "Av El Poblado num 14S 1"]]
+  [1m[36m (64.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Salud Market El Poblado"], ["telefono", 57], ["direccion", "El Poblado num 9 36"]]
+  [1m[35m (53.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia Surtifarma"], ["telefono", 57], ["direccion", "Cl 65 num 65 02"]]
+  [1m[36m (65.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia Pasteur"], ["telefono", 57], ["direccion", "Cl 54 num 46 65"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Todo Drogas"], ["telefono", 57], ["direccion", "50 Ayacucho num 47"]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Farmacia ARCO IRIS"], ["telefono", 57], ["direccion", "24 Cra 45 num 55"]]
+  [1m[35m (74.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería López De Mesa"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (102.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Agora Farmacia Homeopatica"], ["telefono", 57], ["direccion", "Cl 42b num 63C"]]
+  [1m[35m (83.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Droguería Específica"], ["telefono", 57], ["direccion", "NO INFO"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Linea Vital FARMACIA"], ["telefono", 57], ["direccion", "Cra 30 num 102 222"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Farmacia BLANCA"], ["telefono", 57], ["direccion", "Cl 53 num "]]
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "DROGAS LA BASTILLA"], ["telefono", 57], ["direccion", "Cl 51 num 48 03"]]
+  [1m[35m (64.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria RAS"], ["telefono", 57], ["direccion", "Between Cra 73 & Cra 74, San Juan num 73"]]
+  [1m[36m (64.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogas La Rebaja Sede San Javier"], ["telefono", 57], ["direccion", "Cl 44 num 98 46"]]
+  [1m[35m (76.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogas La Rebaja PLUS Sede Suramericana"], ["telefono", 57], ["direccion", "Cra 66 num 49 32"]]
+  [1m[36m (76.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Drogueria Servidescuentos"], ["telefono", 0], ["direccion", "Av 33 num 78"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Drogueria Vida Vital"], ["telefono", 57], ["direccion", "Cra 70 num 30A 44"]]
+  [1m[36m (75.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Clinica Veterinaria El Poblado"], ["telefono", 57], ["direccion", "Cl 10A num 4052"]]
+  [1m[35m (43.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Clinica Veterinaria LA 80"], ["telefono", 57], ["direccion", "Trasnversal 32b num 74B 5"]]
+  [1m[36m (76.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Veterinaria ROBLEDO"], ["telefono", 57], ["direccion", "Cl 65 num 8736"]]
+  [1m[35m (64.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "TERRANOVA"], ["telefono", 57], ["direccion", "Cl 56 num 39 04"]]
+  [1m[36m (65.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Centro Veterinario La 65"], ["telefono", 57], ["direccion", "Cl. 103 num 64D 53"]]
+  [1m[35m (65.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Consultorio Veterinario Avenida Bolivariana"], ["telefono", 57], ["direccion", "Av Bolivariana num 42 12,"]]
+  [1m[36m (75.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Kanú Sede Santafe"], ["telefono", 0], ["direccion", "Cra 43A num 7 Sur - 170 Local  2290."]]
+  [1m[35m (54.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)  [["nombre", "Kanu Sede Tesoro"], ["telefono", 6745], ["direccion", "sdh98"]]
+  [1m[36m (75.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "places" ("nombre", "telefono", "direccion") VALUES (?, ?, ?)[0m  [["nombre", "Kanu Sede Envigado"], ["telefono", 5678], ["direccion", "dhg10"]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 9am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 9am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (76.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 10am a 9pm / Dom 11am a 8pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 11am a 8pm"]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[36m (75.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab NO INFO / Dom NO INFO"], ["midweek", "Lun a Vi NO INFO"], ["festivos", "Festivos NO INFO"]]
+  [1m[35m (65.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 10am a 9pm / Dom 10am a 9pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 10am a 9pm"]]
+  [1m[36m (102.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 2pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (72.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 9pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (64.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 7am a 4pm / Dom Cerrado"], ["midweek", "Lun a Vi 7am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (75.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 7am a 9pm / Dom 8am a 8pm"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos 8am a 8pm"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (76.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 6pm / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 7:30pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 24h / Dom 24h"], ["midweek", "Lun a Vi 24h"], ["festivos", "Festivos 24h"]]
+  [1m[36m (75.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 5pm / Dom 8am a 5pm"], ["midweek", "Lun a Vi 8am a 5pm"], ["festivos", "Festivos 8am a 5pm"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 8pm / Dom 8pm a 8pm"], ["midweek", "Lun a Vi 8am a 8pm"], ["festivos", "Festivos 8am a 8pm"]]
+  [1m[36m (84.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 8am a 12am / Dom Cerrado"], ["midweek", "Lun a Vi 8am a 6pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (82.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 8am a 7:30pm / Dom Cerrado"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (64.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Sab 10am a 9pm / Dom 11am a 8pm"], ["midweek", "Lun a Vi 10am a 9pm"], ["festivos", "Festivos 11am a 8pm"]]
+  [1m[35m (75.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)  [["endweek", "Sab 9am a 9pm / Dom 9am a 8pm"], ["midweek", "Lun a Vi 9am a 8pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[36m (74.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("endweek", "midweek", "festivos") VALUES (?, ?, ?)[0m  [["endweek", "Vie y Sab 10am a 7:30pm / Dom 10am a 6pm"], ["midweek", "Lun a juev 10am a 7pm"], ["festivos", "Festivos Cerrado"]]
+  [1m[35m (75.1ms)[0m  commit transaction
