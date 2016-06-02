@@ -53,36 +53,36 @@ places_list = [
 
 schedules_list = [
   #Farmacias#
-  [ "Sab 9am a 6pm / Dom Cerrado", "Lun a Vi 9am a 6pm", "Festivos Cerrado"]
-  [ "Sab 10am a 9pm / Dom 11am a 8pm", "Lun a Vi 10am a 9pm", "Festivos 11am a 8pm"],
-  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h"]
-  [ "Sab NO INFO / Dom NO INFO", "Lun a Vi NO INFO", "Festivos NO INFO"]
-  [ "Sab 10am a 9pm / Dom 10am a 9pm", "Lun a Vi 10am a 9pm", "Festivos 10am a 9pm"]
-  [ "Sab 8am a 2pm / Dom Cerrado", "Lun a Vi 7am a 6pm", "Festivos Cerrado"]
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado"]
-  [ "Sab 8am a 9pm / Dom Cerrado", "Lun a Vi 8am a 9pm", "Festivos Cerrado"]
-  [ "Sab 8am a 12am / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado"]
-  [ "Sab 8am a 7:30pm / Dom Cerrado", "Lun a Vi 10am a 9pm", "Festivos Cerrado"]
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado"]
-  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h"]
-  [ "Sab 7am a 4pm / Dom Cerrado", "Lun a Vi 7am a 7:30pm", "Festivos Cerrado"]
-  [ "Sab 7am a 9pm / Dom 8am a 8pm", "Lun a Vi 8am a 7:30pm", "Festivos 8am a 8pm"]
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado"]
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado"]
+  [ "Sab 9am a 6pm / Dom Cerrado", "Lun a Vi 9am a 6pm", "Festivos Cerrado" ],
+  [ "Sab 10am a 9pm / Dom 11am a 8pm", "Lun a Vi 10am a 9pm", "Festivos 11am a 8pm" ],
+  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
+  [ "Sab NO INFO / Dom NO INFO", "Lun a Vi NO INFO", "Festivos NO INFO" ],
+  [ "Sab 10am a 9pm / Dom 10am a 9pm", "Lun a Vi 10am a 9pm", "Festivos 10am a 9pm" ],
+  [ "Sab 8am a 2pm / Dom Cerrado", "Lun a Vi 7am a 6pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 9pm / Dom Cerrado", "Lun a Vi 8am a 9pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 12am / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 7:30pm / Dom Cerrado", "Lun a Vi 10am a 9pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado" ],
+  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
+  [ "Sab 7am a 4pm / Dom Cerrado", "Lun a Vi 7am a 7:30pm", "Festivos Cerrado" ],
+  [ "Sab 7am a 9pm / Dom 8am a 8pm", "Lun a Vi 8am a 7:30pm", "Festivos 8am a 8pm" ],
+  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado" ],
 
 
   #Veterinarias#
-  [ "Sab 8am a 2pm / Dom Cerrado", "Lun a Vi 7am a 6pm", "Festivos Cerrado"]
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado"]
-  [ "Sab 8am a 9pm / Dom Cerrado", "Lun a Vi 8am a 9pm", "Festivos Cerrado"]
-  [ "Sab 8am a 12am / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado"]
-  [ "Sab 8am a 7:30pm / Dom Cerrado", "Lun a Vi 10am a 9pm", "Festivos Cerrado"]
-  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado"]
-  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h"]
+  [ "Sab 8am a 2pm / Dom Cerrado", "Lun a Vi 7am a 6pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 9pm / Dom Cerrado", "Lun a Vi 8am a 9pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 12am / Dom Cerrado", "Lun a Vi 8am a 6pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 7:30pm / Dom Cerrado", "Lun a Vi 10am a 9pm", "Festivos Cerrado" ],
+  [ "Sab 8am a 6pm / Dom Cerrado", "Lun a Vi 8am a 7:30pm", "Festivos Cerrado" ],
+  [ "Sab 24h / Dom 24h", "Lun a Vi 24h", "Festivos 24h" ],
 ]
 
 places_list.each do |places|
-  Place.create( nombre: places[0], telefono: places[1], direccion: places[2])
+  Place.create(nombre: places[0], telefono: places[1], direccion: places[2])
 end
 
 schedules_list.each do |schedules|
