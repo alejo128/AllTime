@@ -15,7 +15,7 @@ places_list = [
   [ "Farmacia Mental Care", "44449446", "Av El Poblado num 6 26 Local 206" ],
   [ "Farmacia Colsubsidio Almacentro Medellin", "426 25633 ", "Av El Poblado num 7 sur 170" ],
   [ "Farmacia Las Americas", "43420899", "San Fernando Plaza Entrada num 1 51" ],
-  [ "Farmacia Pasteur Torre Las Vegas", "018000956886", "Av El Poblado num 14S 1" ],
+  [ "Farmacia Pasteur Torre Las Vegas", "0000", "Av El Poblado num 14S 1" ],
   [ "Salud Market El Poblado", "44448404", "El Poblado num 9 36" ],
   [ "Farmacia Surtifarma", "42546541", "Cl 65 num 65 02" ],
   [ "Farmacia Pasteur", "5134220", "Cl 54 num 46 65" ],
