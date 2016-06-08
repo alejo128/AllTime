@@ -39,9 +39,9 @@ places_list = [
   [ "TERRANOVA", "42549187", "Cl 56 num 39 04" ],
   [ "Centro Veterinario La 65", "42672007", "Cl. 103 num 64D 53" ],
   [ "Consultorio Veterinario Avenida Bolivariana", "42352727", "Av Bolivariana num 42 12," ],
-  [ "Kanú Sede Santafe", "(574)444 5268", "Cra 43A num 7 Sur - 170 Local  2290." ],
-  [ "Kanu Sede Tesoro", "(574)444 5268", "Carrera 25 num 1 A Sur 45 nivel 2P o S2 Torre Norte" ],
-  [ "Kanu Sede Envigado", "(574)444 5268,", "Calle 36 D num 27 D 117 Local 32" ],
+  [ "Kanú Sede Santafe", "444 5268", "Cra 43A num 7 Sur - 170 Local  2290." ],
+  [ "Kanu Sede Tesoro", "444 5268", "Carrera 25 num 1 A Sur 45 nivel 2P o S2 Torre Norte" ],
+  [ "Kanu Sede Envigado", "444 5268,", "Calle 36 D num 27 D 117 Local 32" ],
 ]
 
 
