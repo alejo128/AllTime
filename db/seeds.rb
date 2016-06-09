@@ -23,7 +23,7 @@ places_list = [
   [ "Farmacia ARCO IRIS", "42180543", "24 Cra 45 num 55" ],
   [ "Droguería López De Mesa", "44447588", "NO INFO" ],
   [ "Agora Farmacia Homeopatica", "42352665", "Cl 42b num 63C" ],
-  [ "Droguería Específica", "3005210457", "NO INFO" ],
+  [ "Droguería Específica", "5210457", "NO INFO" ],
   [ "Linea Vital FARMACIA", "44886232", "Cra 30 num 102 222" ],
   [ "Farmacia BLANCA", "45127311", "Cl 53 num " ],
   [ "DROGAS LA BASTILLA", "45133193", "Cl 51 num 48 03" ],
